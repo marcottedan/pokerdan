@@ -5,9 +5,9 @@ import java.util.List;
 import lombok.Builder;
 import lombok.Data;
 
-@Builder
 @Data
-public class Deck {
+@Builder
+public class PlayerHandCount {
 
-    List<Card> cards;
+    List<PlayerCount> playerValues;
 }

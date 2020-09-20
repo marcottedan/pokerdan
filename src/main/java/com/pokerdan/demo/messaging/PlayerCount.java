@@ -5,6 +5,7 @@ import lombok.Data;
 
 @Builder
 @Data
-public class Player {
-    private String name;
+public class PlayerCount {
+    private String playerId;
+    private Long count;
 }

@@ -45,11 +45,11 @@ public class GameService {
             return gameOpt;
         }
         Game game = gameOpt.get();
-        if (game.getPlayerNames().contains(playerName)) {
+        if (game.getPlayerIds().contains(playerName)) {
             return gameOpt;
         }
 
-        game.getPlayerNames().add(playerName);
+        game.getPlayerIds().add(playerName);
         repository.save(game);
 
         return gameOpt;
@@ -63,11 +63,11 @@ public class GameService {
             return gameOpt;
         }
         Game game = gameOpt.get();
-        if (!game.getPlayerNames().contains(playerName)) {
+        if (!game.getPlayerIds().contains(playerName)) {
             return gameOpt;
         }
 
-        game.getPlayerNames().remove(playerName);
+        game.getPlayerIds().remove(playerName);
         repository.save(game);
 
         return gameOpt;

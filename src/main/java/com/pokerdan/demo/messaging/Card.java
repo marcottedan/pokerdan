@@ -1,12 +1,18 @@
 package com.pokerdan.demo.messaging;
 
-import lombok.Builder;
+import com.pokerdan.demo.enumeration.Ranks;
+import com.pokerdan.demo.enumeration.Suits;
+
 import lombok.Data;
 
-@Builder
 @Data
 public class Card {
 
-    private String suit;
-    private int faceValue;
+    private Ranks rank;
+    private Suits suit;
+
+    public Card(Ranks rank, Suits suit) {
+        this.rank = rank;
+        this.suit = suit;
+    }
 }

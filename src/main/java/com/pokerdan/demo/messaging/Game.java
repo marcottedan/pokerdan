@@ -11,10 +11,10 @@ public class Game {
 
     private String id;
 
-    private List<String> playerNames;
+    private List<String> playerIds;
 
     public Game() {
         this.id = UUID.randomUUID().toString().replace("-", "");
-        this.playerNames = new ArrayList<>();
+        this.playerIds = new ArrayList<>();
     }
 }
